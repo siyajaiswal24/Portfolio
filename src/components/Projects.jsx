@@ -59,15 +59,12 @@ const projects = [
 ]
 
 function Projects() {
-
   const scrollRef = useRef(null)
 
   useEffect(() => {
-
     const slider = scrollRef.current
 
     const interval = setInterval(() => {
-
       if (!slider) return
 
       slider.scrollLeft += 350
@@ -75,11 +72,9 @@ function Projects() {
       if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
         slider.scrollLeft = 0
       }
-
     }, 2500)
 
     return () => clearInterval(interval)
-
   }, [])
 
   return (
@@ -95,19 +90,18 @@ function Projects() {
 
         <div
           ref={scrollRef}
-          className="flex gap-8 overflow-x-auto pb-6 project-scroll"
+          className="flex gap-8 overflow-x-auto pb-6 scrollbar-hide"
         >
-
           {projects.map((project, index) => (
             <div
               key={index}
-              className="project-card min-w-[340px]"
+              className="min-w-[340px] bg-white dark:bg-slate-800 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden"
             >
 
               <img
                 src={project.image}
                 alt={project.title}
-                className="project-image"
+                className="w-full h-48 object-cover"
               />
 
               <div className="p-6">
@@ -123,32 +117,41 @@ function Projects() {
                 {project.tech.length > 0 && (
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((tech, i) => (
-                      <span key={i} className="tech-badge">
+                      <span
+                        key={i}
+                        className="px-3 py-1 text-xs rounded-full bg-gray-200 dark:bg-gray-700"
+                      >
                         {tech}
                       </span>
                     ))}
                   </div>
                 )}
 
-                <div className="flex gap-4">
+                <div className="flex gap-4 mt-4">
 
-                  <a
-                    href={project.github || "#"}
-                    target="_blank"
-                    className="project-btn"
-                  >
-                    <FaGithub />
-                    GitHub
-                  </a>
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition"
+                    >
+                      <FaGithub />
+                      GitHub
+                    </a>
+                  )}
 
-                  <a
-                    href={project.live || "#"}
-                    target="_blank"
-                    className="project-btn live"
-                  >
-                    <FaExternalLinkAlt />
-                    Live
-                  </a>
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-500 transition"
+                    >
+                      <FaExternalLinkAlt />
+                      Live
+                    </a>
+                  )}
 
                 </div>
 
@@ -156,7 +159,6 @@ function Projects() {
 
             </div>
           ))}
-
         </div>
 
       </div>
