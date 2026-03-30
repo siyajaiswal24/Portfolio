@@ -11,168 +11,168 @@ function Certifications() {
       org: "Lovely Professional University",
       date: "DEC 2025",
       tag: "PROGRAMMING",
-      link: "/public/certificates/c++.pdf"
+      link: "/certificates/cpp.pdf"
     },
     {
       title: "Java Programming",
       org: "Lovely Professional University",
       date: "MAY 2025",
       tag: "PROGRAMMING",
-      link: "/public/certificates/java.pdf"
+      link: "/certificates/java.pdf"
     },
     {
       title: "Data Structures and Algorithm",
       org: "Lovely Professional University",
       date: "DEC 2024",
       tag: "ALGORITHMS",
-      link: "/public/certificates/dsa.pdf"
+      link: "/certificates/dsa.pdf"
     },
     {
       title: "C language Programming",
       org: "Lovely Professional University",
       date: "MAY 2024",
       tag: "PROGRAMMING",
-      link: "/public/certificates/c.pdf"
+      link: "/certificates/c.pdf"
     },
     {
       title: "Python Programming",
       org: "Infosys Springboard",
       date: "FEB 2024",
       tag: "PROGRAMMING",
-      link: "/public/certificates/python.pdf"
+      link: "/certificates/python.pdf"
     },
     {
       title: "Cloud Computing",
       org: "NPTEL",
       date: "APR 2025",
       tag: "CLOUD",
-      link: "/public/certificates/cloud computing.pdf"
+      link: "/certificates/CloudComputing.pdf"
     },
     {
       title: "Full Stack Web Development",
       org: "Cipher Schools",
       date: "JULY 2025",
       tag: "FULL STACK",
-      link: "/public/certificates/Ciphers scool.pdf"
+      link: "/certificates/ciphersscool.pdf"
     },
      {
       title: "Hackathon",
       org: "Lovely Professional University",
       date: "FEB 2024",
       tag: "HACKATHON",
-      link: "/public/certificates/hackathon.pdf"
+      link: "/certificates/hackathon.pdf"
     },
      {
       title: "Web Development",
       org: "InternPe",
       date: "AUG 2024",
       tag: "INTERNSHIP",
-      link: "/public/certificates/internpe.pdf"
+      link: "/certificates/internpe.pdf"
     },
      {
       title: "Communicator",
       org: "Younity",
       date: "NOV 2023",
       tag: "INTERNSHIP",
-      link: "/public/certificates/internship.pdf"
+      link: "/certificates/internship.pdf"
     },
      {
       title: "Responsive Web Design",
       org: "Free Code Camp",
       date: "NOV 2023",
       tag: "WEB DEVELOPMENT",
-      link: "/public/certificates/web design.pdf"
+      link: "/certificates/webdesign.pdf"
     },
      {
       title: "Digital Marketing",
       org: "Google",
       date: "DEC 2022",
       tag: "DIGITAL MARKETING",
-      link: "/public/certificates/digital.pdf"
+      link: "/certificates/digital.pdf"
     },
     {
       title: "Microsoft Excel",
       org: "infosys springboard",
       date: "OCT 2023",
       tag: "EXCEL",
-      link: "/public/certificates/excel.pdf"
+      link: "/certificates/excel.pdf"
     },
     {
       title: " Computational Theory: Language Principle & Finite Automata Theory",
       org: "Infosys Springboard",
       date: "AUG 2025",
       tag: "AUTOMATA",
-      link: "/public/certificates/automata.pdf"
+      link: "/certificates/automata.pdf"
     },
     {
       title: "ChatGPT-4 Prompt Engineering",
       org: "Infosys Springboard",
       date: "AUG 2025",
       tag: "PROMPT ENGINEERING",
-      link: "/public/certificates/prompt.pdf"
+      link: "/certificates/prompt.pdf"
     },
     {
       title: "Built Generative AI apps",
       org: "Udemy",
       date: "DEC 2025",
       tag: "GENERATIVE AI",
-      link: "/public/certificates/build ai certificate.pdf"
+      link: "/certificates/buildaicertificate.pdf"
     },
     {
       title: "Master Generative AI & generative AI tools",
       org: "Udemy",
       date: "AUG 2025",
       tag: "GENERATIVE AI",
-      link: "/public/certificates/master generative ai.pdf"
+      link: "/certificates/mastergenerativeai.pdf"
     },
     {
       title: "Fundamentals of Network Communication",
       org: "Coursera",
       date: "NOV 2024",
       tag: "Network Communication",
-      link: "/public/certificates/Network Communication.pdf"
+      link: "/certificates/networkcommunication.pdf"
     },
     {
       title: "Introduction to Hardware and Operating Systems",
       org: "Coursera",
       date: "SEP 2024",
       tag: "OPERATING SYSTEM",
-      link: "/public/certificates/Hardware.pdf"
+      link: "/certificates/hardware.pdf"
     },
     {
       title: "Computer Communication",
       org: "Coursera",
       date: "DEC 2024",
       tag: "COMPUTER COMMUNICATION",
-      link: "/public/certificates/computer communication.pdf"
+      link: "/certificates/computercommunication.pdf"
     },
     {
       title: "TCP/IP and Advanced Topics",
       org: "Coursera",
       date: "DEC 2024",
       tag: "NETWORKING",
-      link: "/public/certificates/tcp.pdf"
+      link: "/certificates/tcp.pdf"
     },
     {
       title: "Bits And Bytes of Computer Networking",
       org: "Google",
       date: "SEP 2024",
       tag: "NETWORKING",
-      link: "/public/certificates/bits and bytes.pdf"
+      link: "/certificates/bitsandbytes.pdf"
     },
     {
       title: "Packet Switching Networks and Algorithms",
       org: "Coursera",
       date: "DEC 2024",
       tag: "ALGORITHMS",
-      link: "/public/certificates/packet switching.pdf"
+      link: "/certificates/packetswitching.pdf"
     },
     {
       title: "Peer to Peer Protocols and Local Area Networks",
       org: "Coursera",
       date: "NOV 2024",
       tag: "NETWORKING",
-      link: "/public/certificates/peer to peer.pdf"
+      link: "/certificates/peertopeer.pdf"
     },
   ]
 

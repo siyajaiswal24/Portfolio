@@ -51,7 +51,7 @@ function Hero() {
   </button>
 
             <button
-    onClick={() => window.open("/public/certificates/siyafinalcv.docx")}
+    onClick={() => window.open("/certificates/siyafinalcv.docx")}
     className="px-7 py-3 border border-black dark:border-white rounded-lg text-lg hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition"
   >
     Download Resume
