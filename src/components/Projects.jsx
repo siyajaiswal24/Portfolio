@@ -6,7 +6,7 @@ const projects = [
     title: "TradThrift",
     description:
       "A modern thrift store platform where users can buy, sell and rent outfits. Includes outfit planner chatbot and reward based games.",
-    image: "/src/assets/images/trad.png",
+    image: "/images/trad.png",
     tech: ["React", "Node.js", "MongoDB", "Express"],
     github: "",
     live: ""
@@ -15,7 +15,7 @@ const projects = [
     title: "Budget Planner",
     description:
       "A budgeting platform where users can track income and expenses, manage savings and organize finances easily.",
-    image: "/src/assets/images/budgetplanner.png",
+    image: "/images/budgetplanner.png",
     tech: ["PHP", "HTML", "JavaScript", "CSS", "SQL"],
     github: "https://github.com/siyajaiswal24/Budget-Planner",
     live: "https://siyaa-budget.infinityfreeapp.com/"
@@ -24,7 +24,7 @@ const projects = [
     title: "Forest Conservation",
     description:
       "A website created to spread awareness about wildlife and forest conservation.",
-    image: "/src/assets/images/wildlife.png",
+    image: "/images/wildlife.png",
     tech: [],
     github: "",
     live: "https://forestconservation.my.canva.site/wildlife"
@@ -33,7 +33,7 @@ const projects = [
     title: "Blog Website",
     description:
       "A responsive blogging platform where users can read and publish posts with authentication and database storage.",
-    image: "/src/assets/images/blog.png",
+    image: "/images/blog.png",
     tech: ["React", "Node.js", "MongoDB"],
     github: "https://github.com/siyajaiswal24/Blogwebsite",
     live: ""
@@ -42,7 +42,7 @@ const projects = [
     title: "Portfolio Website",
     description:
       "My personal developer portfolio showcasing my projects, skills and coding profiles.",
-    image: "/src/assets/images/portfolio.png",
+    image: "/images/portfolio.png",
     tech: ["React", "Tailwind", "JavaScript"],
     github: "",
     live: ""
@@ -51,7 +51,7 @@ const projects = [
     title: "Todo App",
     description:
       "A simple task manager where users can add, update and delete daily tasks.",
-    image: "/src/assets/images/todo.png",
+    image: "/images/todo.png",
     tech: ["React", "JavaScript", "CSS"],
     github: "https://github.com/siyajaiswal24/Todo-App",
     live: ""
