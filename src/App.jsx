@@ -9,7 +9,7 @@ import LinkedInSection from "./components/LinkedInSection"
 import Certificates from "./components/Certificates"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
-import Cursor from "./components/cursor"
+import Cursor from "./components/Cursor"
 
 function App() {
 
