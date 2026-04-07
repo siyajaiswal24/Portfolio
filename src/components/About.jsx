@@ -1,4 +1,4 @@
-import myPhoto from "../assets/images/siya.jpg"
+
 
 function About() {
   return (
@@ -73,8 +73,9 @@ function About() {
           <div className="p-2 border-4 border-indigo-500 rounded-2xl">
 
             <img
-              src={myPhoto}
-              className="w-[320px] rounded-xl"
+          src="/images/siya.jpg"
+          className="w-[320px] rounded-xl"
+          alt="Siya"
             />
 
           </div>
