@@ -26,7 +26,7 @@ const projects = [
       "A website created to spread awareness about wildlife and forest conservation.",
     image: "/images/wildlife.png",
     tech: [],
-    github: "",
+    github: "https://forestconservation.my.canva.site/wildlife",
     live: "https://forestconservation.my.canva.site/wildlife"
   },
   {
@@ -44,8 +44,8 @@ const projects = [
       "My personal developer portfolio showcasing my projects, skills and coding profiles.",
     image: "/images/portfolio.png",
     tech: ["React", "Tailwind", "JavaScript"],
-    github: "",
-    live: ""
+    github: "https://github.com/siyajaiswal24/Portfolio",
+    live: "https://portfolio-git-main-siyajaiswal24s-projects.vercel.app/"
   },
   {
     title: "Todo App",
@@ -55,6 +55,15 @@ const projects = [
     tech: ["React", "JavaScript", "CSS"],
     github: "https://github.com/siyajaiswal24/Todo-App",
     live: ""
+  },
+  {
+    title: "Planora",
+    description:
+      "A modern itinerary planner that generates personalized travel plans based on user preferences and destination insights.",
+    image: "/images/planora.png",
+    tech: ["React", "Node.js", "Express","APIs"],
+    github: "https://github.com/siyajaiswal24/Planora",
+    live: "https://travelplanora.vercel.app"
   }
 ]
 

@@ -18,7 +18,12 @@ import {
   SiPython,
   SiPhp,
   SiMongodb,
-  SiMysql
+  SiMysql,
+  SiTailwindcss,
+  SiVercel,
+  SiPostman,
+  SiRender,
+  SiExpress
 } from "react-icons/si"
 
 import { VscVscode } from "react-icons/vsc"
@@ -29,13 +34,15 @@ const skillsData = [
   { name: "Java", icon: FaJava, category: "languages", color: "text-red-500" },
   { name: "Python", icon: SiPython, category: "languages", color: "text-yellow-400" },
   { name: "JavaScript", icon: FaJs, category: "languages", color: "text-yellow-300" },
+  { name: "PHP", icon: SiPhp, category: "backend", color: "text-indigo-400" },
 
   { name: "HTML", icon: FaHtml5, category: "frontend", color: "text-orange-500" },
   { name: "CSS", icon: FaCss3Alt, category: "frontend", color: "text-blue-400" },
   { name: "React", icon: FaReact, category: "frontend", color: "text-cyan-400" },
 
   { name: "Node.js", icon: FaNodeJs, category: "backend", color: "text-green-500" },
-  { name: "PHP", icon: SiPhp, category: "backend", color: "text-indigo-400" },
+  { name: "Express.js", icon: SiExpress, category: "backend", color: "text-indigo-400" },
+  { name: "Tailwind CSS", icon: SiTailwindcss, category: "frontend", color: "text-teal-400" },
 
   { name: "SQL", icon: SiMysql, category: "database", color: "text-blue-600" },
   { name: "MongoDB", icon: SiMongodb, category: "database", color: "text-green-600" },
@@ -43,7 +50,10 @@ const skillsData = [
 
   { name: "Git", icon: FaGitAlt, category: "tools", color: "text-orange-500" },
   { name: "GitHub", icon: FaGithub, category: "tools", color: "text-gray-300" },
-  { name: "VS Code", icon: VscVscode, category: "tools", color: "text-blue-500" }
+  { name: "VS Code", icon: VscVscode, category: "tools", color: "text-blue-500" },
+  { name: "Vercel", icon: SiVercel, category: "tools", color: "text-slate-900" },
+  { name: "Render", icon: SiRender, category: "tools", color: "text-purple-500" },
+  { name: "Postman", icon: SiPostman, category: "tools", color: "text-orange-500" }
 ]
 function Skills() {
   const [activeCategory, setActiveCategory] = useState("languages")
