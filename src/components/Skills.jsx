@@ -9,7 +9,9 @@ import {
   FaGitAlt,
   FaGithub,
   FaDatabase,
-  FaJava
+  FaJava,
+  FaBootstrap,
+  FaLaravel
 } from "react-icons/fa"
 
 import {
@@ -39,9 +41,11 @@ const skillsData = [
   { name: "HTML", icon: FaHtml5, category: "frontend", color: "text-orange-500" },
   { name: "CSS", icon: FaCss3Alt, category: "frontend", color: "text-blue-400" },
   { name: "React", icon: FaReact, category: "frontend", color: "text-cyan-400" },
+  { name : "Bootstrap", icon: FaBootstrap, category: "frontend", color: "text-teal-400" },
 
   { name: "Node.js", icon: FaNodeJs, category: "backend", color: "text-green-500" },
   { name: "Express.js", icon: SiExpress, category: "backend", color: "text-indigo-400" },
+  { name: "Laravel", icon: FaLaravel, category: "backend", color: "text-indigo-400" },
   { name: "Tailwind CSS", icon: SiTailwindcss, category: "frontend", color: "text-teal-400" },
 
   { name: "SQL", icon: SiMysql, category: "database", color: "text-blue-600" },
