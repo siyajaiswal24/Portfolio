@@ -1,5 +1,6 @@
 import { useState } from "react"
-import { FaAward } from "react-icons/fa"
+import { FaAward, FaExternalLinkAlt } from "react-icons/fa"
+import { motion, AnimatePresence } from "framer-motion"
 
 function Certifications() {
 
@@ -181,82 +182,87 @@ function Certifications() {
   return (
     <section 
       id="certificates" 
-      className="py-20 px-6 md:px-12 bg-gray-50 dark:bg-slate-900"
+      className="py-24 px-6 md:px-16 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100"
     >
-
-      <div className="flex justify-between items-start mb-12">
-        <h2 className="text-5xl font-bold text-black dark:text-white">
-          CERTIFICATIONS
-        </h2>
-
-        <p className="text-gray-500 dark:text-gray-400 max-w-md">
-          Professional credentials from platforms like Coursera, Infosys and more.
-        </p>
-      </div>
-
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-        {visibleCertificates.map((c, i) => (
-          <div
-            key={i}
-            className="p-6 rounded-2xl 
-            bg-white dark:bg-slate-900 
-            border border-gray-200 dark:border-gray-700
-            shadow-sm hover:shadow-xl 
-            transition-all duration-300 hover:-translate-y-2"
-          >
-
-            <div className="flex items-center justify-between mb-6">
-
-              <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-black text-white">
-                <FaAward />
-              </div>
-
-              <span className="text-xs px-3 py-1 rounded-full border text-blue-500 border-blue-500">
-                {c.tag}
-              </span>
-
-            </div>
-
-            <h3 className="text-lg font-semibold mb-4 text-black dark:text-white">
-              {c.title}
-            </h3>
-
-            <div className="border-t border-gray-200 dark:border-gray-700 mb-4"></div>
-
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              {c.org}
-            </p>
-
-            <p className="text-xs text-gray-400 mb-6">
-              {c.date}
-            </p>
-
-            {c.link && (
-              <a
-                href={c.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-center py-2 rounded-lg bg-black text-white hover:bg-gray-800 transition"
-              >
-                Show Credentials ↗
-              </a>
-            )}
-
-          </div>
-        ))}
-
-      </div>
-
-      <div className="flex justify-center mt-10">
-        <button
-          onClick={() => setShowAll(!showAll)}
-          className="px-6 py-3 rounded-full border border-gray-400 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-800 transition"
+      <div className="max-w-7xl mx-auto">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6"
         >
-          {showAll ? "Show Less" : "Show All Certifications"}
-        </button>
-      </div>
+          <div>
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-600">Certifications</span>
+            </h2>
+            <p className="text-lg text-slate-500 dark:text-slate-400 max-w-2xl">
+              Professional credentials from platforms like Coursera, Infosys and more.
+            </p>
+          </div>
+        </motion.div>
 
+        <motion.div layout className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <AnimatePresence>
+            {visibleCertificates.map((c, i) => (
+              <motion.div
+                key={c.title + i}
+                layout
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.3 }}
+                className="group p-6 rounded-3xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-500/50 hover:shadow-xl transition-all duration-300 flex flex-col"
+              >
+                <div className="flex items-center justify-between mb-6">
+                  <div className="w-14 h-14 flex items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 text-white shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
+                    <FaAward size={24} />
+                  </div>
+                  <span className="text-xs font-bold px-3 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300">
+                    {c.tag}
+                  </span>
+                </div>
+
+                <h3 className="text-xl font-bold mb-3 text-slate-800 dark:text-slate-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">
+                  {c.title}
+                </h3>
+
+                <div className="mt-auto">
+                  <p className="text-sm font-medium text-slate-600 dark:text-slate-400 mb-1">
+                    {c.org}
+                  </p>
+                  <p className="text-xs text-slate-400 dark:text-slate-500 mb-6 font-semibold tracking-wider">
+                    {c.date}
+                  </p>
+
+                  {c.link && (
+                    <a
+                      href={c.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300 font-medium text-sm"
+                    >
+                      Show Credentials <FaExternalLinkAlt size={12} />
+                    </a>
+                  )}
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </motion.div>
+
+        <motion.div 
+          layout
+          className="flex justify-center mt-12"
+        >
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="px-8 py-3.5 rounded-full font-semibold bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:border-blue-500 dark:hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors shadow-sm"
+          >
+            {showAll ? "Show Less" : "Show All Certifications"}
+          </button>
+        </motion.div>
+
+      </div>
     </section>
   )
 }
